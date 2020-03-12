@@ -14,11 +14,6 @@ module.exports =  {
     "node": true
   },
 
-  "globals": {
-    "document": "readonly",
-    "window": "readonly"
-  },
-
   "rules": {
     "no-multiple-empty-lines": ["error", {
       "max": 2,
