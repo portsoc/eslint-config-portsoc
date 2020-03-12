@@ -14,8 +14,16 @@ If you are submitting JS coursework, linting with this config should help you cr
 
 ## Installation
 
+For the stable version:
+
 ```sh
 npm i --save-dev eslint eslint-config-portsoc
+```
+
+For the latest development version:
+
+```sh
+npm i --save-dev eslint portsoc/eslint-config-portsoc
 ```
 
 And add the following in your project as `.eslintrc`:
