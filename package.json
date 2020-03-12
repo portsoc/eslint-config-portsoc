@@ -11,6 +11,9 @@
     "Jacek Kopecky <jacek@jacek.cz>"
   ],
   "license": "ISC",
+  "homepage": "https://github.com/portsoc/eslint-config-portsoc#readme",
+  "repository": "github:portsoc/eslint-config-portsoc",
+  "bugs": "https://github.com/portsoc/eslint-config-portsoc/issues",
   "peerDependencies": {
     "eslint": "^6.8.0"
   },
