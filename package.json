@@ -7,9 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rich Boakes <rjb@port.ac.uk>",
-  "contributors": [ "Jacek Kopecky <jacek@jacek.cz>" ],
+  "contributors": [
+    "Jacek Kopecky <jacek@jacek.cz>"
+  ],
   "license": "ISC",
   "peerDependencies": {
     "eslint": "^6.8.0"
+  },
+  "dependencies": {
+    "semistandard": "^14.2.0"
   }
 }
