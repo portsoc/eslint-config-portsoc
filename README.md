@@ -10,3 +10,18 @@ Bob:   "Hold my beer."
 ```
 
 If you are submitting JS coursework, linting with this config should help you create code that's easy for your assesor to interpret.
+
+
+## Installation
+
+```sh
+npm i --save-dev eslint eslint-config-portsoc
+```
+
+And add the following in your project as `.eslintrc`:
+
+```yaml
+extends: portsoc
+```
+
+Happy linting!
