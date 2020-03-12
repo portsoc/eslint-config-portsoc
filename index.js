@@ -2,6 +2,13 @@ module.exports =  {
 
   "extends": "eslint:recommended",
 
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+
   "env": {
     "es6": true,
     "node": true
@@ -9,7 +16,6 @@ module.exports =  {
 
   "globals": {
     "document": "readonly",
-    "navigator": "readonly",
     "window": "readonly"
   },
 
