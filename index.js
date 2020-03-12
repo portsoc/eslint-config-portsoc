@@ -1,6 +1,6 @@
 module.exports =  {
 
-  "extends": "eslint:recommended",
+  "extends": "semistandard",
 
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -20,8 +20,15 @@ module.exports =  {
   },
 
   "rules": {
-      "semi": ["error", "always"],
-      "no-var": "error"
+    "no-multiple-empty-lines": ["error", {
+      "max": 2,
+      "maxEOF": 0
+    }],
+    "comma-dangle": ["error", "always-multiline"],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }]
   }
-
 }
