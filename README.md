@@ -1,4 +1,4 @@
-# eslint-confi-portsoc
+# eslint-config-portsoc
 
 A shareable config for ESLint.
 
