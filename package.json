@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-portsoc",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "University of Portsmouth, School of Computing, ECMAScript Code Conventions",
   "main": "index.js",
   "scripts": {
