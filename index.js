@@ -20,6 +20,7 @@ module.exports = {
       maxEOF: 0,
     }],
     'comma-dangle': ['error', 'always-multiline'],
+    'quote-props': ['error', 'consistent-as-needed'],
     'space-before-function-paren': ['error', {
       anonymous: 'always',
       named: 'never',
