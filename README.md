@@ -1,15 +1,12 @@
 # eslint-config-portsoc
 
-A shareable config for ESLint.
+An ESLint config created for students and staff within the School of Computing at University of Portsmouth.  Other devs are very welcome to use it or fork the repo.
 
-```
-Alice: "Other people's ESLint configs suck."
-Bob:   "We should totes build our own."
-Alice: "IKR?"
-Bob:   "Hold my beer."
-```
+If you are a...
 
-If you are submitting JS coursework, linting with this config should help you create code that's easy for your assessor to interpret.
+* student submitting JS coursework, linting with this config should help you create code that's easy for your assessor to interpret.
+
+* staff member producing code for students to learn from, linting with this config will produce consistent code that reduces cognitive load.
 
 
 ## Installation
@@ -40,3 +37,7 @@ env:
 ```
 
 Happy linting!
+
+## Contributing
+
+We are always delighted to receive pull requests, even for something as small as a typo.
