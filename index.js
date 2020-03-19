@@ -1,29 +1,29 @@
-module.exports =  {
+module.exports = {
 
-  "extends": "semistandard",
+  extends: 'semistandard',
 
-  "parserOptions": {
-    "ecmaVersion": 2020,
-    "ecmaFeatures": {
-      "impliedStrict": true
-    }
+  parserOptions: {
+    ecmaVersion: 2020,
+    ecmaFeatures: {
+      impliedStrict: true,
+    },
   },
 
-  "env": {
-    "es6": true,
-    "node": true
+  env: {
+    es6: true,
+    node: true,
   },
 
-  "rules": {
-    "no-multiple-empty-lines": ["error", {
-      "max": 2,
-      "maxEOF": 0
+  rules: {
+    'no-multiple-empty-lines': ['error', {
+      max: 2,
+      maxEOF: 0,
     }],
-    "comma-dangle": ["error", "always-multiline"],
-    "space-before-function-paren": ["error", {
-      "anonymous": "always",
-      "named": "never",
-      "asyncArrow": "always"
-    }]
-  }
-}
+    'comma-dangle': ['error', 'always-multiline'],
+    'space-before-function-paren': ['error', {
+      anonymous: 'always',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
+  },
+};
