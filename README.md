@@ -27,6 +27,7 @@ And add the following in your project as `.eslintrc.yml`:
 
 ```yaml
 extends: portsoc
+root: true
 ```
 
 The default environment is Node.js. To lint client-side scripts, add this to your `.eslintrc.yml`:
@@ -35,14 +36,6 @@ The default environment is Node.js. To lint client-side scripts, add this to you
 env:
   browser: true
 ```
-
-Add the following option to your `.eslintrc.yml` to declare that it's the root config of the project:
-
-```yaml
-root: true
-```
-
-By default ESLint will append configuration files up the directory tree to the home directory, here is a [link](https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy) for more details.
 
 Happy linting!
 
