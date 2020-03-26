@@ -26,5 +26,6 @@ module.exports = {
       named: 'never',
       asyncArrow: 'always',
     }],
+    'quotes': ['error', 'single', 'avoid-escape'],
   },
 };
