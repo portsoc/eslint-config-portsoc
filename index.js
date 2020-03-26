@@ -27,5 +27,8 @@ module.exports = {
       asyncArrow: 'always',
     }],
     'quotes': ['error', 'single', 'avoid-escape'],
+    'lines-between-class-members': ['error', 'always', {
+      exceptAfterSingleLine: true,
+    }],
   },
 };
