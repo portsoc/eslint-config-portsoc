@@ -22,6 +22,7 @@ QUnit.test('there are testing files', assert => {
   }
 });
 
+// set up a QUnit test for each file
 for (const file of files) {
   if (file.endsWith(BAD_SUFFIX)) {
     QUnit.test(`file ${file} should fail linting`, assert => {
@@ -29,7 +30,7 @@ for (const file of files) {
       const report = linter.executeOnText(text);
       const messages = report.results[0].messages;
 
-      assert.notEqual(messages.length, 0, `file ${file} should be bad but lints as good`);
+      assert.notEqual(messages.length, 0, 'should report linting errors');
     });
   } else {
     QUnit.test(`file ${file} should be good`, assert => {
@@ -37,7 +38,7 @@ for (const file of files) {
       const report = linter.executeOnText(text);
       const messages = report.results[0].messages;
 
-      assert.equal(messages.length, 0, `file ${file} should be good but has linting errors`);
+      assert.equal(messages.length, 0, `should report no linting errors`);
       if (messages.length > 0) {
         console.log({ file, messages });
       }
