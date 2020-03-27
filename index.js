@@ -31,5 +31,6 @@ module.exports = {
       exceptAfterSingleLine: true,
     }],
     'no-var': ['error'],
+    'require-await': ['error'],
   },
 };
