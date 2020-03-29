@@ -32,5 +32,6 @@ module.exports = {
     }],
     'no-var': ['error'],
     'require-await': ['error'],
+    'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }],
   },
 };
