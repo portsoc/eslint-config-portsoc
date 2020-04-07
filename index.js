@@ -33,5 +33,13 @@ module.exports = {
     'no-var': ['error'],
     'require-await': ['error'],
     'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }],
+    'no-restricted-syntax':
+      [
+        'error',
+        {
+          selector: 'SequenceExpression',
+          message: 'sequence expressions (using comma operator) are not allowed',
+        },
+      ],
   },
 };
