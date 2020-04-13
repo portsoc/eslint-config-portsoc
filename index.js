@@ -2,6 +2,8 @@ module.exports = {
 
   extends: 'semistandard',
 
+  plugins: ['import'],
+
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: {
@@ -41,5 +43,6 @@ module.exports = {
           message: 'sequence expressions (using comma operator) are not allowed',
         },
       ],
+    'import/no-unresolved': [2, { commonjs: true }],
   },
 };
