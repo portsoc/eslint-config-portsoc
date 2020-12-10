@@ -19,15 +19,14 @@
     "eslint": "^7.15.0"
   },
   "dependencies": {
-    "eslint-config-semistandard": "^15.0.0",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1"
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1"
   },
   "devDependencies": {
     "eslint": "^7.15.0",
-    "qunit": "^2.9.3"
+    "qunit": "^2.13.0"
   }
 }
