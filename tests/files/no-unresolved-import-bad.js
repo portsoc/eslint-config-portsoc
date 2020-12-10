@@ -1,1 +1,1 @@
-require('./not-there.js');
+import './not-there.js';
