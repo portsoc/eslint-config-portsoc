@@ -38,7 +38,9 @@ The default environment is Node.js. To lint client-side scripts, add this to you
 env:
   browser: true
 ```
-To achieve the same using `package.json` add the following:
+
+To achieve all the above using `package.json` add the following:
+
 ```json
   "eslintConfig": {
     "extends": "portsoc",
