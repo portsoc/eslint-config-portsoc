@@ -1,6 +1,6 @@
 module.exports = {
 
-  extends: 'semistandard',
+  extends: ['eslint:recommended', 'semistandard'],
 
   plugins: ['import'],
 
