@@ -23,7 +23,9 @@ For the latest development version:
 npm i --save-dev eslint portsoc/eslint-config-portsoc
 ```
 
-And add the following in your project as `.eslintrc.yml`:
+
+## Configuration
+Configuration can be stored as a YAML file or added to `package.json`.  For example, add the following in your project as `.eslintrc.yml`:
 
 ```yaml
 extends: portsoc
@@ -35,6 +37,16 @@ The default environment is Node.js. To lint client-side scripts, add this to you
 ```yaml
 env:
   browser: true
+```
+To achieve the same using `package.json` add the following:
+```json
+  "eslintConfig": {
+    "extends": "portsoc",
+    "root": true,
+    "env": {
+      "browser": true
+    }
+  }
 ```
 
 Happy linting!
