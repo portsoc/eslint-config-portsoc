@@ -44,7 +44,11 @@ module.exports = {
         },
         {
           selector: 'IfStatement[alternate=null] > EmptyStatement.consequent',
-          message: 'Unexpected empty statement.',
+          message: 'unexpected empty statement',
+        },
+        {
+          selector: 'ForInStatement',
+          message: 'for…in statements are not allowed',
         },
       ],
     'import/no-unresolved': [2, { commonjs: true }],
