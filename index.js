@@ -42,6 +42,10 @@ module.exports = {
           selector: 'SequenceExpression',
           message: 'sequence expressions (using comma operator) are not allowed',
         },
+        {
+          selector: 'IfStatement[alternate=null] > EmptyStatement.consequent',
+          message: 'Unexpected empty statement.',
+        },
       ],
     'import/no-unresolved': [2, { commonjs: true }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
