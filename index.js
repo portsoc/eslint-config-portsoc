@@ -47,6 +47,10 @@ module.exports = {
           message: 'unexpected empty statement',
         },
         {
+          selector: 'IfStatement > EmptyStatement.alternate',
+          message: 'unexpected empty statement',
+        },
+        {
           selector: 'ForInStatement',
           message: 'for…in statements are not allowed',
         },
