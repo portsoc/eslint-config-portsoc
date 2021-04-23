@@ -1,1 +1,1 @@
-import '../../package.json';
+import '../test.js';

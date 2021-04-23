@@ -1,4 +1,4 @@
-import x from '../../package.json';
-import y from '../../package.json';
+import x from '../test.js';
+import y from '../test.js';
 
 console.log(x, y);

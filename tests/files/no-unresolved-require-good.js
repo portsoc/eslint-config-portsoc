@@ -1,1 +1,1 @@
-require('../../package.json');
+require('../test.js');
