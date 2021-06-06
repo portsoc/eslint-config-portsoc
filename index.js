@@ -57,5 +57,6 @@ module.exports = {
       ],
     'import/no-unresolved': [2, { commonjs: true }],
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'generator-star-spacing': ['error', 'after'],
   },
 };
