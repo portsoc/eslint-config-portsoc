@@ -8,6 +8,8 @@ If you are a...
 
 * staff member producing code for students to learn from, linting with this config will produce consistent code that reduces cognitive load.
 
+For TypeScript projects, please use [`eslint-config-portsoc-ts`](https://github.com/portsoc/eslint-config-portsoc-ts).
+
 
 ## Installation
 
