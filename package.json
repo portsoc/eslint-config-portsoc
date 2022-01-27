@@ -20,7 +20,6 @@
     "eslint": "^8.7.0"
   },
   "dependencies": {
-    "eslint-config-semistandard": "^15.0.1",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
