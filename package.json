@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "preversion": "[ `git branch --show-current` = 'master' ] # current branch must be master",
-    "test": "eslint -c index.js index.js tests/test.js && qunit tests/test.js"
+    "lint": "eslint -c index.js index.js tests/test.js",
+    "test": "npm run --silent lint && qunit tests/test.js"
   },
   "author": "PortSoC <softeng@port.ac.uk>",
   "contributors": [
