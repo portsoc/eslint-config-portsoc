@@ -1,6 +1,6 @@
 module.exports = {
 
-  extends: ['eslint:recommended', 'semistandard'],
+  extends: ['eslint:recommended', 'standard'],
 
   plugins: ['import'],
 
@@ -17,6 +17,8 @@ module.exports = {
   },
 
   rules: {
+    'semi': ['error', 'always'],
+    'no-extra-semi': 'error',
     'no-multiple-empty-lines': ['error', {
       max: 2,
       maxEOF: 0,
