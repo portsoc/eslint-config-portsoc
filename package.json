@@ -18,17 +18,17 @@
   "repository": "github:portsoc/eslint-config-portsoc",
   "bugs": "https://github.com/portsoc/eslint-config-portsoc/issues",
   "peerDependencies": {
-    "eslint": "^8.7.0"
+    "eslint": "^8.27.0"
   },
   "dependencies": {
-    "eslint-config-standard": "^17.0.0-0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-n": "^14.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^6.1.1"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
+    "eslint": "^8.27.0",
     "qunit": "^2.13.0"
   }
 }
