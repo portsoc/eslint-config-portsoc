@@ -5,7 +5,7 @@ module.exports = {
   plugins: ['import'],
 
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2022,
     ecmaFeatures: {
       impliedStrict: true,
     },
