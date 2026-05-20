@@ -1,3 +1,4 @@
 .vscode
 .github
 tests
+eslint.config.js

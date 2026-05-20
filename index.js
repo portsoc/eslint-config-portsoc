@@ -1,49 +1,40 @@
-module.exports = {
+import js from '@eslint/js';
+import globals from 'globals';
+import importX from 'eslint-plugin-import-x';
+import prettierConfig from 'eslint-config-prettier';
 
-  extends: ['eslint:recommended', 'standard'],
+// University of Portsmouth, School of Computing — ECMAScript code conventions.
+//
+// ESLint enforces code *quality* here; *formatting* is delegated to Prettier
+// (see the bundled .prettierrc.json). `eslint-config-prettier` is appended last
+// to switch off any rule that would conflict with the formatter.
+export default [
+  js.configs.recommended,
 
-  plugins: ['import'],
-
-  parserOptions: {
-    ecmaVersion: 2022,
-    sourceType: 'module',
-    ecmaFeatures: {
-      impliedStrict: true,
+  {
+    plugins: {
+      'import-x': importX,
     },
-  },
 
-  env: {
-    es6: true,
-    node: true,
-  },
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+      },
+    },
 
-  rules: {
-    'semi': ['error', 'always'],
-    'no-extra-semi': 'error',
-    'no-multiple-empty-lines': ['error', {
-      max: 2,
-      maxEOF: 0,
-    }],
-    'comma-dangle': ['error', 'always-multiline'],
-    'quote-props': ['error', 'consistent-as-needed'],
-    'space-before-function-paren': ['error', {
-      anonymous: 'always',
-      named: 'never',
-      asyncArrow: 'always',
-    }],
-    'quotes': ['error', 'single', 'avoid-escape'],
-    'lines-between-class-members': ['error', 'always', {
-      exceptAfterSingleLine: true,
-    }],
-    'no-var': ['error'],
-    'require-await': ['error'],
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }],
-    'no-restricted-syntax':
-      [
+    rules: {
+      'no-var': 'error',
+      'require-await': 'error',
+      'no-unused-vars': ['error', { vars: 'all', args: 'after-used' }],
+      'no-duplicate-imports': 'error',
+      'no-restricted-syntax': [
         'error',
         {
           selector: 'SequenceExpression',
-          message: 'sequence expressions (using comma operator) are not allowed',
+          message:
+            'sequence expressions (using comma operator) are not allowed',
         },
         {
           selector: 'IfStatement[alternate=null] > EmptyStatement.consequent',
@@ -58,8 +49,13 @@ module.exports = {
           message: 'for…in statements are not allowed',
         },
       ],
-    'import/no-unresolved': [2, { commonjs: true }],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'generator-star-spacing': ['error', 'after'],
+      'import-x/no-unresolved': ['error', { commonjs: true }],
+      'import-x/no-extraneous-dependencies': [
+        'error',
+        { devDependencies: true },
+      ],
+    },
   },
-};
+
+  prettierConfig,
+];

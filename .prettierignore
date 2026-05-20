@@ -1,0 +1,5 @@
+node_modules
+
+# Intentionally malformed fixtures — validated by tests/test.js, not the CLI.
+tests/files
+tests/format
