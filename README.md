@@ -16,9 +16,13 @@ This is a [flat config](https://eslint.org/docs/latest/use/configure/configurati
 
 ## Installation
 
+Install straight from this GitHub repository (this always tracks the latest version):
+
 ```sh
-npm i --save-dev eslint prettier eslint-config-portsoc
+npm i --save-dev eslint prettier portsoc/eslint-config-portsoc
 ```
+
+> **Note:** the [`eslint-config-portsoc`](https://www.npmjs.com/package/eslint-config-portsoc) package on npm is stuck at `1.x` (ESLint 8) and can no longer be published to. For v2 (ESLint 9 + Prettier), install from GitHub as above.
 
 ## Configuration
 
