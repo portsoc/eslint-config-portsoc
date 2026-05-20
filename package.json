@@ -1,12 +1,18 @@
 {
   "name": "eslint-config-portsoc",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "University of Portsmouth, School of Computing, ECMAScript Code Conventions",
+  "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
   "scripts": {
     "preversion": "[ `git branch --show-current` = 'master' ] # current branch must be master",
-    "lint": "eslint -c index.js index.js tests/test.js",
-    "test": "npm run --silent lint && qunit tests/test.js"
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "npm run --silent lint && npm run --silent format:check && qunit tests/test.js"
   },
   "author": "PortSoC <softeng@port.ac.uk>",
   "contributors": [
@@ -18,17 +24,17 @@
   "repository": "github:portsoc/eslint-config-portsoc",
   "bugs": "https://github.com/portsoc/eslint-config-portsoc/issues",
   "peerDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": "^9.0.0"
   },
   "dependencies": {
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.5.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1"
+    "@eslint/js": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-import-x": "^4.0.0",
+    "globals": "^16.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.57.1",
-    "qunit": "^2.13.0"
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "qunit": "^2.20.0"
   }
 }
