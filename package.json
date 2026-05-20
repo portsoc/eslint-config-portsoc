@@ -8,7 +8,7 @@
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "scripts": {
-    "preversion": "[ `git branch --show-current` = 'master' ] # current branch must be master",
+    "preversion": "[ `git branch --show-current` = 'main' ] # current branch must be main",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
